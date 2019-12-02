@@ -78,7 +78,7 @@ nav {
 .open {
 	position: absolute;
 	top: 5px;
-	right: 12px;
+	right: 15px;
 }
 
 .open:hover{
