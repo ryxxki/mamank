@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+	<!--CSS cuk-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--icontol-->
+	<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+	<!--jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--mescript-->
+	<link rel="icon" href="css/img/idn-flag.ico" type="image/x-icon">
+	<title>OlqlinzkY - Portfolio Web</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body id="home">
+	<header>
+		<nav>
+			<div class="judul">
+				<h2><b>OlqlinzkY</b></h2>
+			</div>
+
+			<div class="menu-icon open">
+				<i class="mif-menu mif-5x"></i>
+			</div>
+
+			<ul class="nav-list">
+
+				<div class="menu-icon close">
+					<i class="mif-cross mif-5x"></i>
+				</div>
+
+				<li class="nav-item"><a href="#home">Home</a></li>
+				<li class="nav-item"><a href="#About">About</a></li>
+				<li class="nav-item"><a href="#skills">Skills</a></li>
+			</ul>
+		</nav>
+
+		<section class="garox" data-parallax="scroll">
+		<div class="content container">
+			<h1>Welcome!</h1>
+			<p>This is My Portfolio Website. Want To Know More About Me?</p>
+			<div class="btn"><a href="#About">Know More</a></div>
+		</div>
+	</section>
+	</header>
+
+	<div id="About" class="about container1">
+			<h2>About Me</h2>
+			<div class="card">
+				<div class="img"></div>
+				<p>I am a front-end developer and motion <br>designer from Malang, East Java-Indonesia.<br>
+					<br>
+				I am 16 years old, and I also like making <br>an amv</p>
+			</div>		
+	</div>
+
+	<div id="skills" class="skill container1">
+			<h2>My Skills</h2>
+			<div class="card1">
+				<div class="img2 t1"></div>
+				<div class="img2 t2"></div>
+				<div class="img2 t3"></div>
+				<div class="img2 t4"></div>
+				<div class="img2 t5"></div>
+			</div>		
+	</div>
+
+	<div id="footer" class="footer">
+			<div class="isi">
+				<h2>@2K19 - Dinta Alif</h2>
+				<p> All Rights Reserved  |  id:Olqlinzky</p>
+				<a href=mailto:alifsyaifuddin133@gmail.com?subject="email">alifsyaifuddin133@gmail.com</a>
+			</div>	
+	</div>
+
+
+	<script>
+		$(document).ready(function(){
+			//tambah class
+			$(".open").click(function(){
+				$(".nav-list").addClass("active");
+			});
+
+			$(".close").click(function(){
+				$(".nav-list").removeClass("active");
+			});
+
+			// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+		});
+
+	</script>
+</body>
+</html>
