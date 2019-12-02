@@ -77,8 +77,8 @@ nav {
 
 .open {
 	position: absolute;
-	top: 6px;
-	right: 10px;
+	top: 5px;
+	right: 12px;
 }
 
 .open:hover{
@@ -219,6 +219,12 @@ nav {
 
 		.nav-item{
 			margin-right: 0;
+		}
+		
+		.open {
+			position: absolute;
+			top: 6px;
+			right: 10px;
 		}
 
 		.card {
