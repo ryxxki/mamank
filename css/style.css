@@ -45,7 +45,7 @@ nav {
 	position: fixed;
 	top: -1rem;
 	right: -28rem;
-	z-index: -1500;
+	z-index: 1500;
 	background-color: #f1f2f6;
 	width: 400px;
 	height: 150vh;
@@ -99,7 +99,6 @@ nav {
 
 .active{
 	right: -8rem;
-	z-index: 1500;
 }
 
 .judul {
