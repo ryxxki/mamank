@@ -44,7 +44,7 @@ nav {
 .nav-list {
 	position: fixed;
 	top: -1rem;
-	right: -28rem;
+	right: -58rem;
 	z-index: 1500;
 	background-color: #f1f2f6;
 	width: 400px;
@@ -202,7 +202,7 @@ nav {
 		.nav-list {
 			position: fixed;
 			top: -1rem;
-			right: -26rem;
+			right: -56rem;
 			z-index: 1500;
 			background-color: #f1f2f6;
 			width: 400px;
